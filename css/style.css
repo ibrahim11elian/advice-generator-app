@@ -1,0 +1,181 @@
+/* general rules */
+* {
+  font-family: "Manrope", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+::selection {
+  background-color: hsl(217, 19%, 38%);
+  color: hsl(218, 23%, 16%);
+}
+/* framwork class for centering things */
+.centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+body {
+  position: relative;
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+}
+
+/* start the advice container styles */
+.container {
+  max-width: 50%;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 0px 10px 26px -4px rgb(0 0 0 / 5%);
+  padding: 40px 30px;
+}
+
+.container .advice-id {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.container .advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+.container .pattern-devider {
+  height: 30px;
+  mask: url(../images/pattern-divider-desktop.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../images/pattern-divider-desktop.svg) no-repeat 50% 50%;
+  background-color: hsl(193, 38%, 86%);
+}
+
+.container .generate-buttom {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.container .generate-buttom:hover {
+  box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+}
+
+.container .generate-buttom:hover > img {
+  transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+  -webkit-transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+  -moz-transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+  -ms-transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+  -o-transform: translate(-50%, -50%) scale(1.1) rotate(360deg);
+}
+
+/* end the advice container styles */
+
+/* start loading animation styling */
+.loading {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  animation: loading-animation 1s ease-in-out infinite;
+  -webkit-animation: loading-animation 1s ease-in-out infinite;
+}
+
+.loading span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loading span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes loading-animation {
+  0% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 50px;
+  }
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+/* end loading animation styling */
+
+/* start footer */
+
+footer {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 400;
+  color: hsl(193, 38%, 86%);
+}
+
+footer a {
+  text-decoration: none;
+  color: hsl(150, 100%, 66%);
+}
+
+/* end footer */
+
+/* risponsive time ^=^ */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    min-width: 75% !important;
+    padding: 30px 20px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .container {
+    min-width: 80%;
+  }
+}
