@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [click here](https://www.frontendmentor.io/solutions/advice-generator-app-html-css-js-api-tTa6QkHntO)
 - Live Site URL: [click here](https://ibrahim11elian.github.io/advice-generator-app/)
 
 ## My process
